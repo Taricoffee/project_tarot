@@ -1,0 +1,56 @@
+body {
+  background-image: url('images/background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: purple;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.container {
+  padding: 20px;
+}
+
+.card-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.card-image {
+  width: 60%; /* 调整图片宽度 */
+  max-width: 400px; /* 最大宽度 */
+  border: 2px solid #6a0dad; /* 图片边框 */
+  border-radius: 10px; /* 图片圆角 */
+}
+
+.card-info {
+  margin-left: 20px; /* 图片右侧留出间距 */
+  font-size: 18px;
+  color: #6a0dad;
+  background: rgba(255, 255, 255, 0.8); /* 背景色稍微透明 */
+  padding: 10px;
+  border-radius: 5px; /* 文字区域圆角 */
+  max-width: 400px; /* 文字区域最大宽度 */
+  text-align: left; /* 文字左对齐 */
+}
+
+button {
+  background-color: #a73d3d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #c44f4f;
+}

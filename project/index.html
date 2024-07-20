@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>每日塔罗牌抽取</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>每日塔罗牌抽取</h1>
+    <div class="card-container">
+      <img id="cardImage" src="images/card1.png" alt="Tarot Card" class="card-image">
+      <div id="cardDescription" class="card-info">点击下方按钮抽取一张塔罗牌。</div>
+    </div>
+    <button onclick="drawCard()">抽取塔罗牌</button>
+  </div>
+
+  <script>
+    const cards = [
+      { image: 'images/card1.png', description: '这是一张示例塔罗牌1' },
+      { image: 'images/card2.png', description: '这是一张示例塔罗牌2' },
+      { image: 'images/card3.png', description: '这是一张示例塔罗牌3' },
+      { image: 'images/card4.png', description: '这是一张示例塔罗牌4' },
+      { image: 'images/card5.png', description: '这是一张示例塔罗牌5' },
+      { image: 'images/card6.png', description: '这是一张示例塔罗牌6' },
+      { image: 'images/card7.png', description: '这是一张示例塔罗牌7' },
+      { image: 'images/card8.png', description: '这是一张示例塔罗牌8' },
+      { image: 'images/card9.png', description: '这是一张示例塔罗牌9' },
+      { image: 'images/card10.png', description: '这是一张示例塔罗牌10' },
+      { image: 'images/card11.png', description: '这是一张示例塔罗牌11' },
+      { image: 'images/card12.png', description: '这是一张示例塔罗牌12' },
+      { image: 'images/card13.png', description: '这是一张示例塔罗牌13' },
+      { image: 'images/card14.png', description: '这是一张示例塔罗牌14' },
+      { image: 'images/card15.png', description: '这是一张示例塔罗牌15' },
+      { image: 'images/card16.png', description: '这是一张示例塔罗牌16' },
+      { image: 'images/card17.png', description: '这是一张示例塔罗牌17' },
+      { image: 'images/card18.png', description: '这是一张示例塔罗牌18' },
+      { image: 'images/card19.png', description: '这是一张示例塔罗牌19' },
+      { image: 'images/card20.png', description: '这是一张示例塔罗牌20' },
+      { image: 'images/card21.png', description: '这是一张示例塔罗牌21' },
+      { image: 'images/card22.png', description: '这是一张示例塔罗牌22' }
+    ];
+
+    function drawCard() {
+      const randomIndex = Math.floor(Math.random() * cards.length);
+      const selectedCard = cards[randomIndex];
+      document.getElementById('cardImage').src = selectedCard.image;
+      document.getElementById('cardDescription').textContent = selectedCard.description;
+    }
+  </script>
+</body>
+</html>
